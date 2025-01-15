@@ -1,0 +1,35 @@
+{
+    "name": "template",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "test:unit": "vitest --dom",
+        "coverage": "vitest run --dom --coverage"
+    },
+    "dependencies": {
+        "@heroicons/vue": "^2.1.5",
+        "@vue/test-utils": "^2.4.6",
+        "@vueuse/components": "^11.0.3",
+        "@vueuse/core": "^11.0.3",
+        "apexcharts": "^3.53.0",
+        "pinia": "^2.2.2",
+        "tailwind-merge": "^2.4.0",
+        "uuid": "^10.0.0",
+        "vitest": "^2.1.1",
+        "vue": "^3.4.31",
+        "vue-router": "^4.4.0",
+        "vue3-apexcharts": "^1.6.0"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^5.0.5",
+        "autoprefixer": "^10.4.19",
+        "happy-dom": "^15.7.4",
+        "postcss": "^8.4.39",
+        "tailwindcss": "^3.4.6",
+        "vite": "^5.3.4"
+    }
+}

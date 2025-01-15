@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .flex-ic-js {
+        @apply flex items-center justify-start;
+    }
+    .flex-ic-jc {
+        @apply flex items-center justify-center;
+    }
+    .flex-is-js {
+        @apply flex items-start justify-start;
+    }
+    .flex-ib-js {
+        @apply flex items-baseline justify-start;
+    }
+    .flex-is-jb {
+        @apply flex items-start justify-between;
+    }
+    .flex-ic-jb {
+        @apply flex items-center justify-between;
+    }
+    .flex-ic-je {
+        @apply flex items-center justify-evenly;
+    }
+    .flex-ie-jend {
+        @apply flex items-center items-end justify-end;
+    }
+    .flex-ib-jb {
+        @apply flex items-baseline justify-between;
+    }
+    .flex-col-ic-js {
+        @apply flex flex-col items-center justify-start;
+    }
+    .flex-col-ic-je {
+        @apply flex flex-col items-center justify-end;
+    }
+    .flex-col-is-je {
+        @apply flex flex-col items-start justify-end;
+    }
+    .flex-col-ie-js {
+        @apply flex flex-col items-end justify-start;
+    }
+    .flex-col-is-jc {
+        @apply flex flex-col items-start justify-center;
+    }
+    .flex-col-is-js {
+        @apply flex flex-col items-start justify-start;
+    }
+    .flex-col-ic-jc {
+        @apply flex flex-col items-center justify-center;
+    }
+}
