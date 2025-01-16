@@ -22,13 +22,11 @@ const classes = ref(getStyles(props, 'cardStyles'))
 
 <template>
     <div :class="classes.containerClass">
-        <div class="w-full py-2">
-            <header v-if="cardTitle" class="px-2">
-                <h4 :class="classes.cardTitleClass">
-                    {{ cardTitle }}
-                </h4>
-            </header>
-            <slot> </slot>
-        </div>
+        <header v-if="cardTitle" class="px-2">
+            <h4 :class="classes.cardTitleClass">
+                {{ cardTitle }}
+            </h4>
+        </header>
+        <slot> </slot>
     </div>
 </template>

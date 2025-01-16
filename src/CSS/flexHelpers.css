@@ -25,7 +25,10 @@
         @apply flex items-center justify-evenly;
     }
     .flex-ie-jend {
-        @apply flex items-center items-end justify-end;
+        @apply flex items-end justify-end;
+    }
+    .flex-ic-jend {
+        @apply flex items-center justify-end;
     }
     .flex-ib-jb {
         @apply flex items-baseline justify-between;
@@ -41,6 +44,9 @@
     }
     .flex-col-ie-js {
         @apply flex flex-col items-end justify-start;
+    }
+    .flex-col-ie-jc {
+        @apply flex flex-col items-end justify-center;
     }
     .flex-col-is-jc {
         @apply flex flex-col items-start justify-center;
