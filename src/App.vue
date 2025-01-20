@@ -7,7 +7,6 @@ import { RouterView } from 'vue-router'
         class="overflow-y-auto h-dvh bg-appBackground dark:bg-appBackgroundDark flex-is-js"
     >
         <section class="w-full overflow-y-hidden">
-            <AppHeader />
             <RouterView v-slot="{ Component, route }">
                 <!-- Use a custom transition or fallback to `fade` -->
                 <!-- <transition :name="route.meta.transition || 'fade'"> -->

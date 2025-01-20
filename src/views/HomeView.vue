@@ -2,8 +2,7 @@
 // Components
 import AboutSection from '@/components/about/AboutSection.vue'
 import SkillsSection from '@/components/skills/SkillsSection.vue'
-import ProjectCard from '@/components/projects/ProjectCard.vue'
-
+import ProjectsSection from '@/components/projects/ProjectsSection.vue'
 // Pinia
 
 // Utils
@@ -33,12 +32,7 @@ import ProjectCard from '@/components/projects/ProjectCard.vue'
                 <p class="w-32 text-center">Experience</p>
                 <p class="w-32 text-center">About</p>
             </div>
-            <section class="w-full border flex-col-is-js">
-                Projects
-                <div class="w-full flex-ic-js">
-                    <ProjectCard />
-                </div>
-            </section>
+            <ProjectsSection />
         </section>
     </main>
 </template>
