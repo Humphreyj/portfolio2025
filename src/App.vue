@@ -17,7 +17,7 @@ import ProjectsSection from '@/components/projects/ProjectsSection.vue'
 <template>
     <main class="w-screen h-screen pb-1 overflow-hidden flex-is-js">
         <section
-            class="relative w-[40%] h-full py-1 border-r xl:w-[30%] 2xl:w-1/4 flex-col-ic-js"
+            class="relative w-[45%] h-full py-1 border-r xl:w-[30%] 2xl:w-1/4 flex-col-ic-js"
         >
             <AboutSection />
             <div class="gap-4 mt-4 flex-col-ic-jc">
