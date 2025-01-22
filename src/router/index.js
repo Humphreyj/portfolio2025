@@ -1,14 +1,13 @@
 import { createWebHistory, createRouter } from 'vue-router'
 
-import HomeView from '@/views/HomeView.vue'
-import ProjectsView from '@/views/ProjectsView.vue'
-import ProfilesView from '@/views/ProfilesView.vue'
+import ProjectsSection from '@/components/projects/ProjectsSection.vue'
+import ExperienceView from '@/views/ExperienceView.vue'
 
 const routes = [
     {
         path: '/',
-        component: HomeView,
-        name: 'Home',
+        component: ProjectsSection,
+        name: 'Projects',
         meta: {
             transition: 'fade',
             order: 0,
@@ -16,65 +15,19 @@ const routes = [
         },
     },
     {
-        path: '/projects',
-        component: ProjectsView,
-        name: 'projects',
+        path: '/experience',
+        component: ExperienceView,
+        name: 'Experience',
         meta: {
             transition: 'fade',
-            order: 1,
-            viewLoaded: false,
-        },
-    },
-    {
-        path: '/orders',
-        component: () => import('@/views/OrdersView.vue'),
-        name: 'Orders',
-        children: [
-            {
-                path: '',
-                name: 'Manage Orders',
-                component: () => import('@/demo/orders/OrdersList.vue'),
-            },
-            {
-                path: 'details/:id',
-                name: 'Order Details',
-                component: () => import('@/demo/orders/OrderDetails.vue'),
-            },
-        ],
-    },
-    {
-        path: '/profiles',
-        component: ProfilesView,
-        name: 'Profiles',
-        children: [
-            {
-                path: '',
-                name: 'Manage Profiles',
-                component: () => import('@/components/profile/ProfileList.vue'),
-            },
-            {
-                path: 'new',
-                name: 'New Profile',
-                component: () => import('@/components/profile/NewUser.vue'),
-            },
-            {
-                path: 'details/:id',
-                name: 'Profile Details',
-                component: () =>
-                    import('@/components/profile/ProfileDetails.vue'),
-            },
-        ],
-        meta: {
-            transition: 'fade',
-            order: 3,
+            order: 0,
             viewLoaded: false,
         },
     },
 ]
 
 const router = createRouter({
-    linkActiveClass:
-        'font-bold  bg-primary-400 rounded-lg text-white dark:bg-secondary-400 shadow-md',
+    linkActiveClass: 'font-bold rounded-lg dark:bg-secondary-400 ',
     history: createWebHistory(),
     routes,
 })

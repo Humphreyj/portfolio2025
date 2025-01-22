@@ -1,21 +1,32 @@
 <script setup>
+import { computed } from 'vue';
 // Components
 import Card from '@/components/UI/Card.vue'
 const props = defineProps({
     projectImg: String,
     title: String,
+    type: String,
     projectUrl: String,
     description: String,
     techStack: String,
 })
 // const emit = defineEmits()
+
+const gridClass = computed(() => {
+    if (props.type === 'frontend') {
+        return 'grid-rows-[auto_auto_1fr_1fr]'
+    } else {
+        return 'grid-rows-[1fr_auto_1fr]'
+    }
+})
 </script>
 
 <template>
-    <Card container-class="w-[30%] gap-1 p-2 flex-col-ic-jc">
-        <img :src="projectImg" class="w-64 border h-44"></img>
-        <a :href="projectUrl" target="_blank"  class="font-semibold">{{ title }}</a>
-        <p class="text-center">{{ description }}</p>
-        <p>{{ techStack }}</p>
+    <Card container-class="grid w-full grid-cols-1 gap-1 p-2 text-center box-shadow-sm" :class="gridClass">
+        <img v-if="type==='frontend'" :src="projectImg" class="w-64 mx-auto border h-44"></img>
+        <a :href="projectUrl" target="_blank"  class="mx-auto font-semibold border-b w-max border-slate-400">{{ title }}</a>
+        <p class="grid row-start-3 py-1 ">{{ description }}</p>
+        <p class="grid row-start-4 grid-rows-subgrid">{{ techStack }}</p>
     </Card>
+    
 </template>

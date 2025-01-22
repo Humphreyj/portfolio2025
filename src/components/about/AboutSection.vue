@@ -1,5 +1,6 @@
 <script setup>
 // Components
+
 // Assets
 import github from '@/assets/github-mark.svg'
 import linkedin from '@/assets/linkedin.svg'

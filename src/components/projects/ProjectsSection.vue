@@ -3,6 +3,7 @@
 import ProjectCard from '@/components/projects/ProjectCard.vue'
 // Assets
 import startupTemplate from '@/assets/startupTemplate.png'
+import ezPdf from '@/assets/ezPdf.png'
 // const props = defineProps({})
 // const emit = defineEmits()
 const projects = [
@@ -10,6 +11,7 @@ const projects = [
         id: 0,
         projectImg: startupTemplate,
         title: 'Vue UI template',
+        type: 'frontend',
         projectUrl: 'https://venerable-caramel-13eb07.netlify.app/',
         description:
             'Frontend template to spin up projects faster with custom components and composables',
@@ -17,8 +19,9 @@ const projects = [
     },
     {
         id: 1,
-        projectImg: startupTemplate,
+        projectImg: ezPdf,
         title: 'Ezpdf.app',
+        type: 'frontend',
         projectUrl: 'https://venerable-caramel-13eb07.netlify.app/',
         description:
             'Invoice Generator for freelancers and small businesses to create and send invoices in seconds.',
@@ -27,20 +30,24 @@ const projects = [
     {
         id: 2,
         projectImg: startupTemplate,
+        title: "Friend's Cove Quoting System",
+        type: 'frontend',
+        projectUrl: 'https://venerable-caramel-13eb07.netlify.app/',
+        description:
+            'Next.JS web app that uses email authentication and a Rating Engine written in FastAPI.',
+        techStack: 'NextJs, Typescript, Prisma',
+    },
+]
+
+let backendProjects = [
+    {
+        id: 3,
+        projectImg: startupTemplate,
         title: 'Ezpdf API',
         projectUrl: 'https://venerable-caramel-13eb07.netlify.app/',
         description:
             'API for Ezpdf. Handles authentication, creation and sending of invoices.',
         techStack: 'Node Js, Express, MySql',
-    },
-    {
-        id: 3,
-        projectImg: startupTemplate,
-        title: "Friend's Cove Quoting System",
-        projectUrl: 'https://venerable-caramel-13eb07.netlify.app/',
-        description:
-            'Next.JS web app that uses email authentication and a Rating Engine written in FastAPI.',
-        techStack: 'NextJs, Typescript, Prisma',
     },
     {
         id: 4,
@@ -52,7 +59,7 @@ const projects = [
         techStack: 'Python, Fast API, Docker',
     },
     {
-        id: 4,
+        id: 5,
         projectImg: startupTemplate,
         title: 'RxPatrner Integrated discount API',
         projectUrl: 'https://venerable-caramel-13eb07.netlify.app/',
@@ -64,18 +71,42 @@ const projects = [
 </script>
 
 <template>
-    <section class="w-full border flex-col-ic-js">
-        Projects
-        <div class="flex-wrap w-full gap-2 flex-ic-jc">
+    <section class="w-11/12 px-2 pt-5 mx-auto flex-col-ic-js">
+        <div class="flex-col-ic-js">
+            <h1 class="text-2xl font-bold">Projects</h1>
+            <p class="text-center">
+                Here are some of the projects I have worked on recently.
+            </p>
+        </div>
+        <h2 class="my-1 text-xl font-bold">UI</h2>
+        <div class="grid w-full grid-cols-3 gap-2 h-min">
             <ProjectCard
                 v-for="project in projects"
                 :key="project.id"
                 :projectImg="project.projectImg"
                 :title="project.title"
+                :type="project.type"
                 :projectUrl="project.projectUrl"
                 :description="project.description"
                 :techStack="project.techStack"
             />
+        </div>
+        <h2 class="my-1 text-xl font-bold">API</h2>
+        <div class="grid w-full grid-cols-3 gap-2">
+            <ProjectCard
+                v-for="project in backendProjects"
+                :key="project.id"
+                :projectImg="project.projectImg"
+                :title="project.title"
+                :type="project.type"
+                :projectUrl="project.projectUrl"
+                :description="project.description"
+                :techStack="project.techStack"
+            />
+        </div>
+        <div class="mt-8 flex-col-ic-js">
+            <h1 class="text-2xl font-bold">Experience</h1>
+            <p class="text-center">Here are some of the places I worked at.</p>
         </div>
     </section>
 </template>

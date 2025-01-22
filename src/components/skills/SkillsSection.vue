@@ -12,7 +12,7 @@ const skills = [
     'Node.js',
     'Express',
     'MongoDB',
-    'PostgreSQL',
+    'Postgre',
     'Python',
     'SQL',
     'TypeScript',
@@ -30,7 +30,7 @@ const skills = [
                 <div
                     v-for="(skill, i) in skills"
                     :key="i"
-                    class="w-24 p-1 border border-black rounded-md"
+                    class="p-1 border border-black rounded-md max-w-24"
                 >
                     {{ skill }}
                 </div>

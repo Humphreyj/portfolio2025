@@ -1,23 +1,39 @@
 <script setup>
-import { RouterView } from 'vue-router'
+import { RouterView, RouterLink } from 'vue-router'
+// Components
+import AboutSection from '@/components/about/AboutSection.vue'
+import SkillsSection from '@/components/skills/SkillsSection.vue'
+import ProjectsSection from '@/components/projects/ProjectsSection.vue'
+// Pinia
+
+// Utils
+// const props = defineProps({})
+// const emit = defineEmits()
+
+// brown bg
+// bg-[#533420]
 </script>
 
 <template>
-    <div
-        class="overflow-y-auto h-dvh bg-appBackground dark:bg-appBackgroundDark flex-is-js"
-    >
-        <section class="w-full overflow-y-hidden">
-            <RouterView v-slot="{ Component, route }">
-                <!-- Use a custom transition or fallback to `fade` -->
-                <!-- <transition :name="route.meta.transition || 'fade'"> -->
-                <component :is="Component" />
-                <!-- </transition> -->
-            </RouterView>
+    <main class="w-screen h-screen pb-1 overflow-hidden flex-is-js">
+        <section
+            class="relative w-[28%] h-full px-2 py-1 border-r flex-col-is-js"
+        >
+            <AboutSection />
+            <div class="gap-4 mt-4 flex-col-ic-js">
+                <RouterLink to="/" class="">Projects</RouterLink>
+                <RouterLink to="/experience" class="">Experience</RouterLink>
+                <RouterLink to="/about" class="">About</RouterLink>
+            </div>
+            <SkillsSection />
         </section>
-    </div>
+        <section class="w-full h-full py-4 flex-col-is-js bg-slate-50">
+            <RouterView />
+        </section>
+    </main>
 </template>
 
-<style>
+<!-- <style>
 /* width */
 ::-webkit-scrollbar {
     width: 1px;
@@ -37,4 +53,4 @@ import { RouterView } from 'vue-router'
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-</style>
+</style> -->
