@@ -33,7 +33,6 @@ const projects = [
         projectImg: quotingSystem,
         title: "Friend's Cove Quoting System",
         type: 'frontend',
-        projectUrl: 'https://venerable-caramel-13eb07.netlify.app/',
         description:
             'Next.JS web app that uses email authentication and a Rating Engine written in FastAPI.',
         techStack: 'NextJs, Typescript, Prisma',
@@ -43,27 +42,22 @@ const projects = [
 let backendProjects = [
     {
         id: 3,
-        projectImg: startupTemplate,
         title: 'Ezpdf API',
-        projectUrl: 'https://venerable-caramel-13eb07.netlify.app/',
+        projectUrl: 'https://github.com/Humphreyj/Node-Api-Template',
         description:
             'API for Ezpdf. Handles authentication, creation and sending of invoices.',
         techStack: 'Node Js, Express, MySql',
     },
     {
         id: 4,
-        projectImg: startupTemplate,
         title: "Friend's Cove Rating Engine",
-        projectUrl: 'https://venerable-caramel-13eb07.netlify.app/',
         description:
             "FastAPI application that calculates the premium for a homeowner's insurance quote.",
         techStack: 'Python, Fast API, Docker',
     },
     {
         id: 5,
-        projectImg: startupTemplate,
         title: 'RxPartner Integrated discount API',
-        projectUrl: 'https://venerable-caramel-13eb07.netlify.app/',
         description:
             'Business-critical system exchanging financial and healthcare transactions with strict latency requirements. ',
         techStack: 'Python, Fast API, Docker',
@@ -73,7 +67,7 @@ let backendProjects = [
 
 <template>
     <section
-        class="w-11/12 px-2 pt-5 mx-auto overflow-y-scroll md:overflow-y-auto flex-col-ic-js"
+        class="w-11/12 px-4 pt-5 mx-auto overflow-y-scroll xl:w-2/3 md:overflow-y-auto flex-col-ic-js"
     >
         <div class="flex-col-ic-js">
             <h1 class="text-2xl font-bold">Projects</h1>
@@ -83,7 +77,7 @@ let backendProjects = [
         </div>
         <h2 class="my-1 text-xl font-bold">UI</h2>
         <div
-            class="grid w-full grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 h-min"
+            class="grid w-full grid-cols-1 gap-2 md:grid-cols-2 xl:grid-cols-3"
         >
             <ProjectCard
                 v-for="project in projects"
@@ -98,7 +92,7 @@ let backendProjects = [
         </div>
         <h2 class="my-1 text-xl font-bold">API</h2>
         <div
-            class="grid w-full grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3"
+            class="grid w-full grid-cols-1 gap-2 md:grid-cols-2 xl:grid-cols-3"
         >
             <ProjectCard
                 v-for="project in backendProjects"
@@ -110,10 +104,6 @@ let backendProjects = [
                 :description="project.description"
                 :techStack="project.techStack"
             />
-        </div>
-        <div class="mt-8 flex-col-ic-js">
-            <h1 class="text-2xl font-bold">Experience</h1>
-            <p class="text-center">Here are some of the places I worked at.</p>
         </div>
     </section>
 </template>

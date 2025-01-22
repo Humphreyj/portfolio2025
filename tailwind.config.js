@@ -25,8 +25,8 @@ export default {
                 },
             },
             fontFamily: {
-                display: ['Inter', 'sans-serif'],
-                content: ['Nunito Sans', 'serif'],
+                display: ['Lexend Deca', 'sans-serif'],
+                content: ['Noto Sans', 'sans-serif'],
             },
         },
         screens: {

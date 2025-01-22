@@ -9,7 +9,7 @@ import linkedin from '@/assets/linkedin.svg'
 </script>
 
 <template>
-    <section class="w-full gap-4 flex-col-ic-jc">
+    <section class="w-full gap-4 font-semibold font-display flex-col-ic-jc">
         <div class="w-full gap-2 flex-col-ic-jc">
             <p class="text-xl text-center">Joshua Humphrey</p>
             <p class="text-center">Fullstack Developer</p>
