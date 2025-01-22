@@ -14,19 +14,27 @@ const props = defineProps({
 
 const gridClass = computed(() => {
     if (props.type === 'frontend') {
-        return 'grid-rows-[auto_auto_1fr_1fr]'
+        return 'grid-rows-[auto_auto_1fr_auto]'
     } else {
-        return 'grid-rows-[1fr_auto_1fr]'
+        return 'grid-rows-[auto_auto_1fr]'
     }
 })
 </script>
 
 <template>
-    <Card container-class="grid w-full grid-cols-1 gap-1 p-2 text-center box-shadow-sm" :class="gridClass">
-        <img v-if="type==='frontend'" :src="projectImg" class="w-64 mx-auto border h-44"></img>
-        <a :href="projectUrl" target="_blank"  class="mx-auto font-semibold border-b w-max border-slate-400">{{ title }}</a>
-        <p class="grid row-start-3 py-1 ">{{ description }}</p>
-        <p class="grid row-start-4 grid-rows-subgrid">{{ techStack }}</p>
-    </Card>
+    <main class="w-full">
+        <Card v-if="type==='frontend'" container-class="grid w-full grid-cols-1 gap-1 p-2 text-center box-shadow-sm" :class="gridClass">
+            <img v-if="type==='frontend'" :src="projectImg" class="w-64 mx-auto border h-44"></img>
+            <a :href="projectUrl" target="_blank"  class="mx-auto font-semibold border-b w-max border-slate-400">{{ title }}</a>
+            <p class="grid row-start-3 py-1 ">{{ description }}</p>
+            <p class="grid row-start-4 grid-rows-subgrid">{{ techStack }}</p>
+        </Card>
+        <Card v-else container-class="grid w-full grid-cols-1 gap-1 p-2 text-center box-shadow-sm min-h-44" :class="gridClass">
+            <a :href="projectUrl" target="_blank"  class="mx-auto font-semibold border-b w-max border-slate-400">{{ title }}</a>
+            <p class="grid row-start-2 py-1 ">{{ description }}</p>
+            <p class="grid row-start-4 grid-rows-subgrid">{{ techStack }}</p>
+        </Card>
+
+    </main>
     
 </template>

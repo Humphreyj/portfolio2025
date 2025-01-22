@@ -4,6 +4,7 @@ import ProjectCard from '@/components/projects/ProjectCard.vue'
 // Assets
 import startupTemplate from '@/assets/startupTemplate.png'
 import ezPdf from '@/assets/ezPdf.png'
+import quotingSystem from '@/assets/quotingSystem.png'
 // const props = defineProps({})
 // const emit = defineEmits()
 const projects = [
@@ -29,7 +30,7 @@ const projects = [
     },
     {
         id: 2,
-        projectImg: startupTemplate,
+        projectImg: quotingSystem,
         title: "Friend's Cove Quoting System",
         type: 'frontend',
         projectUrl: 'https://venerable-caramel-13eb07.netlify.app/',
@@ -61,7 +62,7 @@ let backendProjects = [
     {
         id: 5,
         projectImg: startupTemplate,
-        title: 'RxPatrner Integrated discount API',
+        title: 'RxPartner Integrated discount API',
         projectUrl: 'https://venerable-caramel-13eb07.netlify.app/',
         description:
             'Business-critical system exchanging financial and healthcare transactions with sector partners. ',
@@ -79,7 +80,9 @@ let backendProjects = [
             </p>
         </div>
         <h2 class="my-1 text-xl font-bold">UI</h2>
-        <div class="grid w-full grid-cols-3 gap-2 h-min">
+        <div
+            class="grid w-full grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 h-min"
+        >
             <ProjectCard
                 v-for="project in projects"
                 :key="project.id"
@@ -92,7 +95,9 @@ let backendProjects = [
             />
         </div>
         <h2 class="my-1 text-xl font-bold">API</h2>
-        <div class="grid w-full grid-cols-3 gap-2">
+        <div
+            class="grid w-full grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3"
+        >
             <ProjectCard
                 v-for="project in backendProjects"
                 :key="project.id"
