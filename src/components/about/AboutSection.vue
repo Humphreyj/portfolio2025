@@ -9,15 +9,12 @@ import linkedin from '@/assets/linkedin.svg'
 </script>
 
 <template>
-    <section class="flex-col-ic-js">
-        <div class="w-full gap-4 flex-ic-js">
-            <div class="border border-black rounded-full size-20"></div>
-
-            <div class="gap-2 flex-col-ic-js">
-                <p class="text-xl text-center">Joshua Humphrey</p>
-                <p class="text-center">Fullstack Developer</p>
-            </div>
+    <section class="w-full gap-4 flex-col-ic-jc">
+        <div class="w-full gap-2 flex-col-ic-jc">
+            <p class="text-xl text-center">Joshua Humphrey</p>
+            <p class="text-center">Fullstack Developer</p>
         </div>
+
         <div class="w-full gap-3 flex-ic-jc">
             <a
                 href="https://github.com/Humphreyj"

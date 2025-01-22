@@ -56,7 +56,7 @@ let backendProjects = [
         title: "Friend's Cove Rating Engine",
         projectUrl: 'https://venerable-caramel-13eb07.netlify.app/',
         description:
-            'FastAPI application that calculates the premium for a given quote using the BriteCore SDK.',
+            "FastAPI application that calculates the premium for a homeowner's insurance quote.",
         techStack: 'Python, Fast API, Docker',
     },
     {
@@ -65,14 +65,16 @@ let backendProjects = [
         title: 'RxPartner Integrated discount API',
         projectUrl: 'https://venerable-caramel-13eb07.netlify.app/',
         description:
-            'Business-critical system exchanging financial and healthcare transactions with sector partners. ',
+            'Business-critical system exchanging financial and healthcare transactions with strict latency requirements. ',
         techStack: 'Python, Fast API, Docker',
     },
 ]
 </script>
 
 <template>
-    <section class="w-11/12 px-2 pt-5 mx-auto flex-col-ic-js">
+    <section
+        class="w-11/12 px-2 pt-5 mx-auto overflow-y-scroll md:overflow-y-auto flex-col-ic-js"
+    >
         <div class="flex-col-ic-js">
             <h1 class="text-2xl font-bold">Projects</h1>
             <p class="text-center">

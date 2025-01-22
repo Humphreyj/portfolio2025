@@ -17,10 +17,10 @@ import ProjectsSection from '@/components/projects/ProjectsSection.vue'
 <template>
     <main class="w-screen h-screen pb-1 overflow-hidden flex-is-js">
         <section
-            class="relative w-[28%] h-full px-2 py-1 border-r flex-col-is-js"
+            class="relative w-[40%] md:w-[28%] h-full px-2 py-1 border-r flex-col-ic-js"
         >
             <AboutSection />
-            <div class="gap-4 mt-4 flex-col-ic-js">
+            <div class="gap-4 mt-4 flex-col-ic-jc">
                 <RouterLink to="/" class="">Projects</RouterLink>
                 <RouterLink to="/experience" class="">Experience</RouterLink>
                 <RouterLink to="/about" class="">About</RouterLink>
@@ -33,7 +33,7 @@ import ProjectsSection from '@/components/projects/ProjectsSection.vue'
     </main>
 </template>
 
-<!-- <style>
+<style>
 /* width */
 ::-webkit-scrollbar {
     width: 1px;
@@ -53,4 +53,4 @@ import ProjectsSection from '@/components/projects/ProjectsSection.vue'
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-</style> -->
+</style>

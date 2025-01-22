@@ -7,12 +7,13 @@ const skills = [
     'CSS',
     'Tailwind',
     'JavaScript',
-    'React',
-    'Vue',
     'Node.js',
     'Express',
-    'MongoDB',
-    'Postgre',
+    'React',
+    'Vue',
+    'Redux',
+    'Pinia',
+    'Postgres',
     'Python',
     'SQL',
     'TypeScript',
@@ -23,10 +24,12 @@ const skills = [
 </script>
 
 <template>
-    <section class="absolute bottom-0 w-full border-t h-1/3">
-        <div class="relative flex-col-is-js">
-            <p class="px-4 text-lg font-bold text-center">Technical Skills</p>
-            <div class="relative flex-wrap gap-3 flex-is-js">
+    <section
+        class="absolute w-full border-t px-4 pt-2 bottom-10 h-[45%] md:h-1/3 overflow-y-scroll md:overflow-y-auto"
+    >
+        <div class="relative flex-col-ic-js">
+            <p class="my-2 text-lg font-bold text-center">Technical Skills</p>
+            <div class="relative grid grid-cols-1 gap-3 md:grid-cols-3">
                 <div
                     v-for="(skill, i) in skills"
                     :key="i"
