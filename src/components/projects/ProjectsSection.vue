@@ -57,7 +57,7 @@ let backendProjects = [
     },
     {
         id: 5,
-        title: 'RxPartner Integrated discount API',
+        title: 'RXP Integrated discount API',
         description:
             'Business-critical system exchanging financial and healthcare transactions with strict latency requirements. ',
         techStack: 'Python, Fast API, Docker',
@@ -67,7 +67,7 @@ let backendProjects = [
 
 <template>
     <section
-        class="w-full px-4 pt-5 mx-auto overflow-y-scroll md:w-11/12 2xl:w-2/3 md:overflow-y-auto flex-col-ic-js"
+        class="w-full px-2 pt-5 mx-auto overflow-y-scroll lg:px-4 lg:w-11/12 2xl:w-2/3 md:overflow-y-auto flex-col-ic-js"
     >
         <div class="flex-col-ic-js">
             <h1 class="text-2xl font-bold">Projects</h1>
