@@ -67,15 +67,16 @@ let backendProjects = [
 
 <template>
     <section
-        class="w-full px-2 pt-5 mx-auto overflow-y-scroll lg:px-4 lg:w-11/12 2xl:w-2/3 md:overflow-y-auto flex-col-ic-js"
+        class="w-full px-2 pt-1 mx-auto overflow-y-scroll overscroll-contain lg:px-4 md:w-11/12 2xl:w-3/4 md:overflow-y-auto flex-col-ic-js"
     >
         <div class="flex-col-ic-js">
             <h1 class="text-2xl font-bold">Projects</h1>
-            <p class="text-center">
-                Here are some of the projects I have worked on recently.
+            <p class="w-3/4 text-center">
+                Here are some of the projects I have worked on recently. Some of
+                these I can't show, but I am happy to discuss further.
             </p>
         </div>
-        <h2 class="my-1 text-xl font-bold">UI</h2>
+        <h2 class="my-3 text-xl font-bold">UI</h2>
         <div
             class="grid w-full grid-cols-1 gap-2 md:grid-cols-2 xl:grid-cols-3"
         >
@@ -90,7 +91,7 @@ let backendProjects = [
                 :techStack="project.techStack"
             />
         </div>
-        <h2 class="my-1 text-xl font-bold">API</h2>
+        <h2 class="my-3 text-xl font-bold">API</h2>
         <div
             class="grid w-full grid-cols-1 gap-2 md:grid-cols-2 xl:grid-cols-3"
         >

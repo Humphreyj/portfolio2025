@@ -26,7 +26,7 @@ const titleClass = ""
 <template>
     <main class="w-full">
         <Card v-if="type==='frontend'" container-class="grid justify-center w-full grid-cols-1 gap-1 p-2 text-center box-shadow-sm" :class="gridClass">
-            <img v-if="type==='frontend'" :src="projectImg" class="w-64 mx-auto border h-44"></img>
+            <img v-if="type==='frontend'" :src="projectImg" class="w-64 mx-auto border rounded-sm border-slate-300 h-44"></img>
             <a v-if="projectUrl" :href="projectUrl" target="_blank"  class="mx-auto font-semibold border-b font-display w-max border-slate-400">{{ title }}</a>
             <p v-else class="mx-auto font-semibold border-b cursor-not-allowed w-max font-display border-slate-400">{{ title }}</p>
             <p class="grid row-start-3 py-1 font-content">{{ description }}</p>

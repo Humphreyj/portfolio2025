@@ -9,22 +9,19 @@ import ProjectsSection from '@/components/projects/ProjectsSection.vue'
 // Utils
 // const props = defineProps({})
 // const emit = defineEmits()
-
-// brown bg
-// bg-[#533420]
 </script>
 
 <template>
-    <main class="w-screen h-screen pb-1 overflow-hidden flex-is-js">
+    <main class="w-screen h-screen pb-12 overflow-hidden md:pb-4 flex-is-js">
         <section
             class="relative w-[45%] h-full py-1 border-r xl:w-[30%] 2xl:w-1/4 flex-col-ic-js"
         >
             <AboutSection />
-            <div class="gap-4 mt-4 flex-col-ic-jc">
+            <nav class="gap-4 mt-4 flex-col-ic-jc">
                 <RouterLink to="/" class="">Projects</RouterLink>
                 <RouterLink to="/experience" class="">Experience</RouterLink>
                 <RouterLink to="/about" class="">About</RouterLink>
-            </div>
+            </nav>
             <SkillsSection />
         </section>
         <section class="w-full h-full py-4 flex-col-is-js bg-slate-50">
