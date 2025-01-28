@@ -20,23 +20,22 @@ const gridClass = computed(() => {
     }
 })
 
-const titleClass = ""
 </script>
 
 <template>
-    <main class="w-full">
-        <Card v-if="type==='frontend'" container-class="grid justify-center w-full grid-cols-1 gap-1 p-2 text-center box-shadow-sm" :class="gridClass">
+    <main class="w-full md:py-2">
+        <Card v-if="type==='frontend'" container-class="grid justify-center w-full grid-cols-1 gap-1 p-2 text-center min-h-[22rem] shadow-lg" :class="gridClass">
             <img v-if="type==='frontend'" :src="projectImg" class="w-64 mx-auto border rounded-sm border-slate-300 h-44"></img>
             <a v-if="projectUrl" :href="projectUrl" target="_blank"  class="mx-auto font-semibold border-b font-display w-max border-slate-400">{{ title }}</a>
             <p v-else class="mx-auto font-semibold border-b cursor-not-allowed w-max font-display border-slate-400">{{ title }}</p>
             <p class="grid row-start-3 py-1 font-content">{{ description }}</p>
-            <p class="grid row-start-4 grid-rows-subgrid">{{ techStack }}</p>
+            <p class="grid row-start-4 font-semibold grid-rows-subgrid font-subtext">{{ techStack }}</p>
         </Card>
-        <Card v-else container-class="grid w-full grid-cols-1 gap-1 p-2 text-center box-shadow-sm min-h-44" :class="gridClass">
+        <Card v-else container-class="grid w-full grid-cols-1 gap-1 p-2 text-center shadow-lg min-h-[13rem]" :class="gridClass">
             <a v-if="projectUrl" :href="projectUrl" target="_blank"  class="mx-auto font-semibold border-b font-display w-max border-slate-400">{{ title }}</a>
             <p v-else class="mx-auto font-semibold border-b cursor-not-allowed font-display w-max border-slate-400">{{ title }}</p>
             <p class="grid row-start-2 row-end-3 py-1 font-content">{{ description }}</p>
-            <p class="grid row-start-4 grid-rows-subgrid">{{ techStack }}</p>
+            <p class="grid row-start-4 font-semibold grid-rows-subgrid font-subtext">{{ techStack }}</p>
         </Card>
 
     </main>

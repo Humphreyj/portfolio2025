@@ -35,7 +35,7 @@ const skills = [
                 <div
                     v-for="(skill, i) in skills"
                     :key="i"
-                    class="w-full p-1 text-center border border-black rounded-md font-content"
+                    class="w-full p-1 font-semibold text-center border border-black rounded-md shadow font-subtext"
                 >
                     {{ skill }}
                 </div>

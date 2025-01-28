@@ -24,9 +24,11 @@ export default {
                     400: '#27344c',
                 },
             },
+
             fontFamily: {
-                display: ['Lexend Deca', 'sans-serif'],
+                display: ['Roboto', 'sans-serif'],
                 content: ['Noto Sans', 'sans-serif'],
+                subtext: ['Roboto Flex', 'sans-serif'],
             },
         },
         screens: {
