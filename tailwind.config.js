@@ -27,7 +27,7 @@ export default {
 
             fontFamily: {
                 display: ['Roboto', 'sans-serif'],
-                content: ['Noto Sans', 'sans-serif'],
+                content: ['Open Sans', 'sans-serif'],
                 subtext: ['Roboto Flex', 'sans-serif'],
             },
         },
