@@ -68,7 +68,7 @@ let backendProjects = [
 
 <template>
     <section
-        class="w-full px-2 pt-1 mx-auto overflow-y-scroll overscroll-contain lg:px-4 md:w-11/12 2xl:w-3/4 md:overflow-y-auto flex-col-ic-js"
+        class="w-full px-2 pt-1 pb-4 mx-auto overflow-y-scroll overscroll-contain lg:px-4 md:w-11/12 2xl:w-3/4 md:overflow-y-auto flex-col-ic-js"
     >
         <div class="flex-col-ic-js">
             <h1 class="text-2xl font-bold font-display">Projects</h1>
