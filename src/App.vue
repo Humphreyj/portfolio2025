@@ -18,8 +18,8 @@ import ProjectsSection from '@/components/projects/ProjectsSection.vue'
         >
             <AboutSection />
             <nav class="gap-4 mt-4 flex-col-ic-jc">
-                <RouterLink to="/" class="">Projects</RouterLink>
-                <RouterLink to="/experience" class="">Experience</RouterLink>
+                <!-- <RouterLink to="/" class="">Projects</RouterLink> -->
+                <!-- <RouterLink to="/experience" class="">Experience</RouterLink> -->
                 <!-- <RouterLink to="/about" class="">About</RouterLink> -->
             </nav>
             <SkillsSection />

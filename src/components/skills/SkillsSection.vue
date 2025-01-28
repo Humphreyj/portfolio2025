@@ -18,8 +18,9 @@ const skills = [
     'SQL',
     'TypeScript',
     'Bootstrap',
-    'Sass',
-    'Less',
+    'Cypress',
+    'Vitest',
+    'Jest',
 ]
 </script>
 

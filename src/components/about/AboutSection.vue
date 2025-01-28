@@ -10,11 +10,14 @@ import linkedin from '@/assets/linkedin.svg'
 
 <template>
     <section
-        class="w-full gap-4 pt-4 font-semibold font-display flex-col-ic-jc"
+        class="w-full gap-6 pt-4 font-semibold font-display flex-col-ic-jc"
     >
         <div class="w-full gap-2 flex-col-ic-jc">
-            <p class="text-xl text-center">Joshua Humphrey</p>
-            <p class="text-center">Fullstack Developer</p>
+            <p class="text-2xl text-center">Joshua Humphrey</p>
+            <p class="text-lg text-center">Fullstack Developer</p>
+            <p class="w-2/3 text-center font-subtext">
+                Passionate about writing clean code and eating good meals.
+            </p>
         </div>
 
         <div class="w-full gap-3 flex-ic-jc">
