@@ -14,6 +14,7 @@ const projects = [
         title: 'Vue UI template',
         type: 'frontend',
         projectUrl: 'https://venerable-caramel-13eb07.netlify.app/',
+        githubUrl: 'https://github.com/Humphreyj/Template',
         description:
             'Frontend template with custom components and composables to speed up new project development.',
         techStack: 'Tailwind CSS, Vue 3, Vite',
@@ -24,6 +25,7 @@ const projects = [
         title: 'Ezpdf.app',
         type: 'frontend',
         projectUrl: 'https://venerable-caramel-13eb07.netlify.app/',
+        githubUrl: 'https://github.com/Humphreyj/roys',
         description:
             'Invoice Generator for freelancers and small businesses to create and send invoices in seconds.',
         techStack: 'Tailwind CSS, Vue 3, Vite',
@@ -43,7 +45,7 @@ let backendProjects = [
     {
         id: 3,
         title: 'Ezpdf API',
-        projectUrl: 'https://github.com/Humphreyj/Node-Api-Template',
+        githubUrl: 'https://github.com/Humphreyj/Node-Api-Template',
         description:
             'API for Ezpdf. Handles authentication, creation and sending of invoices.',
         techStack: 'Node Js, Express, MySql',
@@ -88,6 +90,7 @@ let backendProjects = [
                 :title="project.title"
                 :type="project.type"
                 :projectUrl="project.projectUrl"
+                :githubUrl="project.githubUrl"
                 :description="project.description"
                 :techStack="project.techStack"
             />
@@ -103,6 +106,7 @@ let backendProjects = [
                 :title="project.title"
                 :type="project.type"
                 :projectUrl="project.projectUrl"
+                :githubUrl="project.githubUrl"
                 :description="project.description"
                 :techStack="project.techStack"
             />
