@@ -26,7 +26,7 @@ const skills = [
 
 <template>
     <section
-        class="absolute w-full border-t px-4 bottom-6 lg:bottom-0 h-[50%] md:h-min overflow-y-scroll overscroll-contain md:overflow-y-auto"
+        class="absolute w-full px-4 overflow-y-scroll border-t bottom-6 lg:bottom-0 h-1/4 md:h-min overscroll-contain md:overflow-y-auto"
     >
         <div class="relative flex-col-ic-js">
             <p class="my-2 text-lg font-bold text-center">Technical Skills</p>
