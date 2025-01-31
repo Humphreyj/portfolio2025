@@ -12,7 +12,7 @@ import ProjectsSection from '@/components/projects/ProjectsSection.vue'
 </script>
 
 <template>
-    <main class="w-screen h-screen pb-12 overflow-hidden md:pb-4 flex-is-js">
+    <main class="w-screen h-screen pb-12 overflow-hidden md:pb-0 flex-is-js">
         <section
             class="relative w-[45%] h-full py-1 border-r border-slate-400 xl:w-[30%] 2xl:w-1/4 flex-col-ic-js"
         >
