@@ -14,7 +14,7 @@ import ProjectsSection from '@/components/projects/ProjectsSection.vue'
 <template>
     <main class="w-screen h-screen pb-12 overflow-hidden md:pb-0 flex-is-js">
         <section
-            class="relative w-[45%] h-full py-1 border-r border-slate-400 xl:w-[30%] 2xl:w-1/4 flex-col-ic-js"
+            class="relative w-[45%] h-full py-1 motion-translate-y-in-50 motion-duration-750 border-r border-slate-400 xl:w-[30%] 2xl:w-1/4 flex-col-ic-js"
         >
             <AboutSection />
             <nav class="gap-4 mt-4 flex-col-ic-jc">
@@ -24,7 +24,9 @@ import ProjectsSection from '@/components/projects/ProjectsSection.vue'
             </nav>
             <SkillsSection />
         </section>
-        <section class="w-full h-full py-4 flex-col-is-js bg-slate-100">
+        <section
+            class="w-full h-full py-4 flex-col-is-js motion-opacity-in-0 motion-duration-[2.5s] bg-slate-100"
+        >
             <RouterView />
         </section>
     </main>

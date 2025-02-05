@@ -34,7 +34,7 @@ const downloadResume = () => {
             </p>
         </div>
 
-        <div class="w-full gap-3 flex-ic-jc">
+        <div class="w-full gap-3 flex-ic-jc motion-blur-in-md">
             <a
                 href="https://github.com/Humphreyj"
                 target="_blank"
