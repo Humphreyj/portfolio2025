@@ -3,7 +3,7 @@ import { computed } from 'vue';
 // Components
 import Card from '@/components/UI/Card.vue'
 // Assets
-import github from '@/assets/github-mark.svg'
+import GithubIcon from '@/assets/GithubIcon.vue'
 import { EyeIcon } from '@heroicons/vue/24/solid';
 const props = defineProps({
     projectImg: String,
@@ -36,20 +36,19 @@ const gridClass = computed(() => {
                 <p class="grid row-start-3 py-1 font-content">{{ description }}</p>
                 <p class="grid row-start-4 font-semibold grid-rows-subgrid font-subtext">{{ techStack }}</p>
             </div>
-            <footer class="w-full h-8 px-2 border-t flex-ic-jb">
+            <footer class="w-full h-8 px-2 border-t flex-ie-jb">
                 <a
                 v-if="githubUrl"
                 :href="githubUrl"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><img :src="github" alt="" class="size-6"
-            /></a>
+                ><GithubIcon class='size-6'/></a>
                 <a
                 v-if="projectUrl" :href="projectUrl" target="_blank" rel="noopener noreferrer"
                 ><EyeIcon class="size-6"/></a>
             </footer>
         </Card>
-        <Card v-else container-class="grid w-full grid-cols-1 relative  gap-1 text-center shadow-lg min-h-[15rem]" >
+        <Card v-else container-class="grid w-full grid-cols-1 relative  gap-1 text-center shadow-lg min-h-[15.5rem]" >
             <div class="grid w-full p-2 grid-rows-auto">
 
                 <a v-if="projectUrl" :href="projectUrl" target="_blank"  class=" grid grid-rows-[auto-auto-auto-2fr-2fr] mx-auto text-lg font-semibold border-b font-display w-max border-slate-400">{{ title }}</a>
@@ -57,17 +56,16 @@ const gridClass = computed(() => {
                 <p class="grid row-start-2 row-end-7 py-1 min-h-32 font-content">{{ description }}</p>
                 <p class="grid row-start-7 font-semibold grid-rows-subgrid font-subtext">{{ techStack }}</p>
             </div>
-            <footer class="w-full h-8 px-2 border-t flex-ic-jb">
+            <footer class="w-full h-8 px-2 border-t flex-ie-jb">
                 <a
                 v-if="githubUrl"
                 :href="githubUrl"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><img :src="github" alt="" class="size-6"
-            /></a>
+                ><GithubIcon class='size-6'/></a>
                 <a
                 v-if="projectUrl" :href="projectUrl" target="_blank" rel="noopener noreferrer"
-                ><EyeIcon class="size-6"/></a>
+                ><EyeIcon class="my-0 size-6"/></a>
             </footer>
         </Card>
 

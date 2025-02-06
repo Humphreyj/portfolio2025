@@ -1,10 +1,12 @@
 <script setup>
 // Components
-import Button from '../UI/Button.vue'
+
 // Assets
-import github from '@/assets/github-mark.svg'
-import linkedin from '@/assets/linkedin.svg'
+
 import resume from '@/assets/resume.pdf'
+import ResumeIcon from '@/assets/ResumeIcon.vue'
+import GithubIcon from '@/assets/GithubIcon.vue'
+import LinkedinIcon from '@/assets/LinkedinIcon.vue'
 
 // const props = defineProps({})
 // const emit = defineEmits()
@@ -39,19 +41,19 @@ const downloadResume = () => {
                 href="https://github.com/Humphreyj"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><img :src="github" alt="" class="size-8 md:size-10"
+                ><GithubIcon class="size-10"
             /></a>
+
             <a
                 href="https://www.linkedin.com/in/joshahumphrey/"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><img :src="linkedin" alt="" class="size-8 md:size-10"
+                ><LinkedinIcon class="size-10"
             /></a>
+            <ResumeIcon
+                class="cursor-pointer size-10"
+                @click="downloadResume"
+            />
         </div>
-        <Button
-            @click="downloadResume"
-            button-class="hover:mt-[1px]"
-            text="Get Resume"
-        />
     </section>
 </template>

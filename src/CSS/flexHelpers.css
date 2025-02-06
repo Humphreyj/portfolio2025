@@ -9,6 +9,9 @@
     .flex-ic-jc {
         @apply flex items-center justify-center;
     }
+    .flex-ie-jb {
+        @apply flex items-end justify-between;
+    }
     .flex-is-js {
         @apply flex items-start justify-start;
     }

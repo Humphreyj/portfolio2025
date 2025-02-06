@@ -1,22 +1,30 @@
 <script setup>
-import { RouterView, RouterLink } from 'vue-router'
+import { RouterView } from 'vue-router'
+import { useDark, useToggle } from '@vueuse/core'
 // Components
 import AboutSection from '@/components/about/AboutSection.vue'
 import SkillsSection from '@/components/skills/SkillsSection.vue'
-import ProjectsSection from '@/components/projects/ProjectsSection.vue'
+import DarkModeSwitch from './components/UI/DarkModeSwitch.vue'
+
 // Pinia
 
 // Utils
+
+const isDark = useDark()
+const toggleDark = useToggle(isDark)
 // const props = defineProps({})
 // const emit = defineEmits()
 </script>
 
 <template>
-    <main class="w-screen h-screen pb-12 overflow-hidden md:pb-0 flex-is-js">
+    <main
+        class="w-screen h-screen pb-12 overflow-hidden md:pb-0 flex-is-js primary-text dark:bg-cardBackgroundDark"
+    >
         <section
             class="relative w-[45%] h-full py-1 motion-translate-y-in-50 motion-duration-[1s] border-r border-slate-400 xl:w-[30%] 2xl:w-1/4 flex-col-ic-js"
         >
             <AboutSection />
+            <DarkModeSwitch :is-dark="isDark" @toggle="toggleDark" />
             <nav class="gap-4 mt-4 flex-col-ic-jc">
                 <!-- <RouterLink to="/" class="">Projects</RouterLink> -->
                 <!-- <RouterLink to="/experience" class="">Experience</RouterLink> -->
@@ -25,7 +33,7 @@ import ProjectsSection from '@/components/projects/ProjectsSection.vue'
             <SkillsSection />
         </section>
         <section
-            class="w-full h-full py-4 flex-col-is-js motion-opacity-in-0 motion-duration-[4s] bg-slate-100"
+            class="w-full h-full py-4 flex-col-is-js motion-opacity-in-0 transition-all bg-appBackground dark:bg-appBackgroundDark motion-duration-[4s]"
         >
             <RouterView />
         </section>
