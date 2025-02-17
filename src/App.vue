@@ -1,6 +1,7 @@
 <script setup>
 import { RouterView } from 'vue-router'
 import { useDark, useToggle } from '@vueuse/core'
+import { useRoute } from 'vue-router'
 // Components
 import AboutSection from '@/components/about/AboutSection.vue'
 import SkillsSection from '@/components/skills/SkillsSection.vue'
@@ -12,6 +13,7 @@ import DarkModeSwitch from './components/UI/DarkModeSwitch.vue'
 
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
+const route = useRoute()
 // const props = defineProps({})
 // const emit = defineEmits()
 </script>
@@ -21,6 +23,7 @@ const toggleDark = useToggle(isDark)
         class="w-screen h-screen pb-12 overflow-hidden md:pb-0 flex-is-js primary-text dark:bg-cardBackgroundDark"
     >
         <section
+            v-if="route.name !== 'Resume'"
             class="relative w-[45%] h-full py-1 motion-translate-y-in-50 motion-duration-[1s] border-r border-slate-400 xl:w-[30%] 2xl:w-1/4 flex-col-ic-js"
         >
             <AboutSection />

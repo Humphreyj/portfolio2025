@@ -1,7 +1,8 @@
 import { createWebHistory, createRouter } from 'vue-router'
 
 import ProjectsSection from '@/components/projects/ProjectsSection.vue'
-import ExperienceView from '@/views/ExperienceView.vue'
+
+import ResumeView from '@/views/ResumeView.vue'
 
 const routes = [
     {
@@ -15,9 +16,9 @@ const routes = [
         },
     },
     {
-        path: '/experience',
-        component: ExperienceView,
-        name: 'Experience',
+        path: '/resume',
+        component: ResumeView,
+        name: 'Resume',
         meta: {
             transition: 'fade',
             order: 0,

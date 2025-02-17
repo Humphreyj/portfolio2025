@@ -11,7 +11,7 @@ export default {
                 sidebarBackground: '#b8d4fc',
                 sidebarBackgroundDark: '#0f172a',
                 cardBackgroundDark: '#0e1f38',
-                primaryText: '#2c3649',
+                primaryText: '#000000',
                 primaryTextDark: '#edf0f4',
                 secondaryText: '#9399A1',
                 primary: {
