@@ -6,8 +6,8 @@ export const experienceData = [
         company: 'Surton',
         year: '2024 - Present',
         bullets: [
-            'Frontend Development: Developed and maintained responsive user interfaces using React, ensuring seamless integration with backend services.',
-            'Backend Development: Built and optimized RESTful APIs using FastAPI, enhancing the performance and scalability of server-side applications.',
+            'Frontend Development: Developed and maintained responsive user interfaces using React, and Next.js.',
+            'Backend Development: Optimized FastAPI services for improved performance and scalability.',
             'SDK Maintenance: Managed and updated a Python SDK, providing robust and efficient tools for internal and external use.',
         ],
     },
@@ -18,11 +18,10 @@ export const experienceData = [
         company: 'Worthwhile',
         year: '2022 - 2024',
         bullets: [
-            'Collaborate with cross-functional teams to deliver products that maximize client ROI, enhancing overall user satisfaction and engagement.',
-            ' Design and maintain reusable UI templates, accelerating development for future client projects and ensuring consistency across applications.',
-            'Develop web and mobile apps using Vue, React, and React Native',
-            'Create end to end and unit tests with Vitest and Cypress to validate application functionality, and improve code reliability.',
-            'Regularly meet with clients to gather requirements, and communicate progress or delays.',
+            // 'Collaborate with cross-functional teams to deliver products that maximize client ROI, enhancing overall user satisfaction and engagement.',
+            'Designed and maintained reusable UI templates, accelerating development and ensuring consistency.',
+            'Developed web and mobile apps using Vue, React, and React Native',
+            'Created end to end and unit tests with Vitest and Cypress to validate application functionality, and improve code reliability.',
         ],
     },
     {
@@ -32,10 +31,9 @@ export const experienceData = [
         company: 'Armadillo Power',
         year: '2020 - 2022',
         bullets: [
-            'Design and develop a front end using React.js to allow users to authenticate and interact with Armadillo Power web tools.',
-            'Develop a back end using Node.js that interacts with a Postgres database to hold user information, and access to other web based tools.',
-            'Collaborated with cross-functional teams to gather requirements and deliver high-quality software solutions on time.',
-            'Display GEOJSON data on an interactive map based on user parameters.',
+            'Designed and developed a front end using React.js to allow users to authenticate and interact with Armadillo Power web tools.',
+            'Developed a back end using Node.js that interacts with a Postgres database to hold user information, and access to other web based tools.',
+            'Implemented an interactive map displaying GEOJSON data dynamically based on user input.',
         ],
     },
 ]
@@ -44,17 +42,30 @@ export const projectData = [
     {
         id: 0,
         title: 'Vue UI template',
-        type: 'frontend',
         githubUrl: 'https://github.com/Humphreyj/Template',
+        company: 'Personal',
+        year: '2024',
         description:
             'Frontend template with custom components and composables to speed up new project development.',
         techStack: 'Tailwind CSS, Vue 3, Vite',
     },
     {
-        id: 5,
-        title: 'RXP Integrated discount API',
+        id: 1,
+        title: 'RX Partner Integrated discount API',
+        company: 'Surton',
+        year: '2024 - Current',
         description:
-            'Business-critical system exchanging financial and healthcare transactions with strict latency requirements for the largest pharmacy in the world by revenue.',
-        techStack: 'AWS, Python, Fast API, Docker',
+            'Developed and maintained an API for exchanging financial and healthcare transactions with strict latency requirements, supporting one of the largest pharmacies in the world.',
+        techStack: 'AWS, Python, FastAPI',
+    },
+]
+
+export const educationData = [
+    {
+        id: 1,
+        title: 'Lambda School',
+        location: 'Remote',
+        field: 'Fullstack Web Development',
+        year: '2018 - 2020',
     },
 ]

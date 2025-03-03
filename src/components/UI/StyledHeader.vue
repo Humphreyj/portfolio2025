@@ -24,7 +24,7 @@ const headerSize = computed(() => {
         case 'lg':
             return 'text-xl'
         case 'xl':
-            return 'text-3xl'
+            return 'text-2xl'
         default:
             return 'text-md'
     }
@@ -38,7 +38,7 @@ const headerTopOffset = computed(() => {
         case 'lg':
             return 'top-4'
         case 'xl':
-            return 'top-6'
+            return 'top-5'
         default:
             return 'top-3'
     }
