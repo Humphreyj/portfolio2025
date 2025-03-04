@@ -37,6 +37,12 @@ const testingSkills = ['Cypress', 'Vitest', 'Jest']
                     >
                     <p>Austin, Tx</p>
                     <a href="tel:832-283-5446">832-283-5446</a>
+                    <a
+                        href="https://www.joshua-humphrey.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >joshua-humphrey.com</a
+                    >
                     <div class="gap-4 flex-ic-js">
                         <a
                             href="https://github.com/Humphreyj"

@@ -32,7 +32,8 @@ const downloadResume = () => {
             <p class="text-2xl text-center">Joshua Humphrey</p>
             <p class="text-lg text-center">Fullstack Developer</p>
             <p class="w-10/12 text-center md:w-2/3 font-subtext">
-                Passionate about writing clean code and eating good meals.
+                Passionate about writing clean, scalable code and solving
+                complex problems.
             </p>
         </div>
 
