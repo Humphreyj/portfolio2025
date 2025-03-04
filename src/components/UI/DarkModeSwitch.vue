@@ -11,17 +11,16 @@ const emit = defineEmits(['toggle'])
 
 <template>
     <div
-        class="relative w-1/2 h-8 mt-6 border-2 border-gray-700 rounded-full dark:border-gray-500 md:w-1/4"
+        class="relative w-1/2 h-8 mt-6 border-2 border-gray-700 rounded-full cursor-pointer dark:border-gray-500 md:w-1/4"
+        @click="emit('toggle')"
     >
         <MoonIcon
             v-if="isDark"
-            class="absolute left-0 w-6 h-6 mt-[4px] ml-1 motion-duration-1500 motion-scale-out-0 cursor-pointer motion-translate-y-in-100 primary-text"
-            @click="emit('toggle')"
+            class="absolute left-0 w-6 h-6 mt-[4px] ml-1 motion-duration-1500 motion-scale-out-0 motion-translate-y-in-100 primary-text"
         />
         <SunIcon
             v-if="!isDark"
-            class="absolute right-0 w-6 h-6 mt-[3px] mr-1 motion-duration-1500 cursor-pointer motion-translate-y-in-100 motion-scale-out-0 primary-text"
-            @click="emit('toggle')"
+            class="absolute right-0 w-6 h-6 mt-[3px] mr-1 motion-duration-1500 motion-translate-y-in-100 motion-scale-out-0 primary-text"
         />
     </div>
 </template>
